@@ -22,6 +22,7 @@ properties:
     description: "Type of contact's phone number"
     type: string
     enum: ['home', 'personal', 'work']
+    example: 'personal'
   userId:
     description: 'ID of the user who created the contact'
     type: string
@@ -37,4 +38,5 @@ properties:
   photo:
     description: "Link to contact's photo"
     type: string
+    format: binary
     example: https://res.cloudinary.com/uqwgdu/image/upload/image.png
