@@ -14,7 +14,6 @@ requestBody:
           - name
           - phoneNumber
           - contactType
-          - userId
         properties:
           name:
             description: "Contact's name"
@@ -29,10 +28,6 @@ requestBody:
             type: string
             enum: ['home', 'personal', 'work']
             example: 'personal'
-          userId:
-            description: 'ID of the user who created the contact'
-            type: string
-            example: '65e4decdd286b30065d54af9'
           email:
             description: "Contact's email"
             type: string

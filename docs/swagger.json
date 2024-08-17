@@ -11,9 +11,6 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3000"
-    },
-    {
       "url": "https://nodejs-hw-mongodb-lnbc.onrender.com"
     }
   ],
@@ -547,8 +544,7 @@
                 "required": [
                   "name",
                   "phoneNumber",
-                  "contactType",
-                  "userId"
+                  "contactType"
                 ],
                 "properties": {
                   "name": {
@@ -570,11 +566,6 @@
                       "work"
                     ],
                     "example": "personal"
-                  },
-                  "userId": {
-                    "description": "ID of the user who created the contact",
-                    "type": "string",
-                    "example": "65e4decdd286b30065d54af9"
                   },
                   "email": {
                     "description": "Contact's email",
