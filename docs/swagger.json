@@ -856,11 +856,16 @@
       "user": {
         "type": "object",
         "required": [
+          "_id",
           "name",
-          "email",
-          "password"
+          "email"
         ],
         "properties": {
+          "_id": {
+            "type": "string",
+            "description": "User's ID",
+            "example": "65ca67e7ae7f10c88b598384"
+          },
           "name": {
             "type": "string",
             "description": "User's name",
@@ -871,11 +876,6 @@
             "description": "User's email",
             "format": "email",
             "example": "jasmin55@gmail.com"
-          },
-          "password": {
-            "type": "string",
-            "description": "User's password",
-            "example": "my-password55"
           }
         }
       },
